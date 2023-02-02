@@ -37,35 +37,70 @@ h1{
     justify-content: center;
     align-items: center;
     font-family: 'Anton', sans-serif;
+    
 }
-.btn{
+/* cartas in general */
+#card-cont{
+    background-color: rgb(226, 234, 234);
+    border-style:unset 
+}
+#imange-card{
+    width: ;
+    height: 200px;
+    border-radius: 1rem;
+}
+#card-text{
+    width: 250px;
+    height: 99px;
+    justify-content: center;
+    align-items: center;
+}
+#btn-details{
+    width: 140px;
+    justify-content: baseline;
+    align-items: baseline;
+}
+#main-index{
+    width: 100%;
+}
+.container-price{
     display: flex;
-    width: 80px;
-    justify-content: end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
-.col>div>img{
-    padding: 12px;
-    height: 60%;
-    border-radius: 35px;
+.div-price{
+    justify-content: center;
+    align-items: center;
 }
+
+/* footer */
 .fotter-img{
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     margin-left: 30px;
+    width: 50px;
 }
 .main-upcoming{
     width: auto;
     height: auto;
     min-height: 80vh;
 }
-form{
+.search-container{
+    width: 1rem;
+    height: 2rem;
+}
+.btn{
+    display: flex;
+    width: 4rem;
+}
+/* tabla contac */
+.form-contact{
     
-    background-color: rgb(224, 231, 231);
+    background-color: rgb(233, 238, 238);
     width: 500px;
     min-width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 50px;
     border: 2px solid rgb(230, 221, 221);
 }
@@ -90,11 +125,8 @@ form>div>label>input{
     min-height: 80vh;
     height: auto;
 }
-.mainPast{
-    min-height: 91vh;
-    height: auto;
 
-}
+
 
 /* /////----- STATS------///
  */
@@ -104,10 +136,30 @@ form>div>label>input{
     flex-direction: column;
     flex-wrap: wrap;
    height: auto;
-   min-height: 80vh;
+   width: 100%;
    justify-content: center;
    align-items: center;
  }
+.Title-content{
+    
+}
+ tbody,th,tr,td {
+    border: 2px solid rgb(81, 72, 57);
+}
+.table{
+    width: 90%;
+}
+table{
+margin: auto;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/*  
  #table{
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +182,7 @@ table, th, td{
 }
 td{
     background-color: rgb(225, 217, 220);
-}
+} */
 
 
 
