@@ -17,8 +17,8 @@
 
 <body>
     <header class=>
-        <nav class="navbar navbar-expand-sm bg-body-terti bg-body-secondary bg-gradient">
-            <div class="container-fluid d-flex bg-body-secondary">
+        <nav class="navbar navbar-expand-sm bg-body-terti" id="navbar">
+            <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="#">
                     <img src="./image/Logo Amazing Events.png"
                         class="d-inline-block align-text-top p-1 object-fit-contain" width="130" height="74"
@@ -54,12 +54,12 @@
         </nav>
     </header>
     <main class="main-contact d-flex flex-column flex-wrap justify-content-center align-items-center">
-            <h1> Contact us</h1>
-        <form class="form-contact d-flex flex-wrap flex-colum" action="">
+            <h1 id="h1"> Contact us</h1>
+        <form class="form-contact d-flex flex-wrap flex-colum" id="form-c" action="">
             <fieldset class="fieldset d-flex flex-wrap ms-5 m-3">
-                <b> DATE HERE</b>
+                <b id="date-here"> DATE HERE</b>
             </fieldset>
-            <div class="contFirstyL d-flex flex-wrap flex-column ">
+            <div class="last-container d-flex flex-wrap flex-column ">
                 <label class="name-con">
                     First Name:
                     <input type="text" name="First Name">
@@ -71,20 +71,20 @@
                     <input type="text" name="Last Name">
                 </label>
             </div>
-            <div >
+            <div id="email" >
                 <label>
                     E-mail:
                     <input class="e-mail-input" type="email" name="Emmail" placeholder="Hola@usted.com">
                 </label>
             </div>
             
-            <div class="form-floating d-flex flex-wrap ">
+            <div class="form-floating d-flex flex-wrap " id="form-floating">
                 <textarea class="form-control" id="floatingTextarea"></textarea>
                 <label for="floatingtextarea">Service</label>
               </div>
         </form>
     </main>
-    <footer class="bg-body-secondary  d-md-flex  justify-content-around">
+    <footer class="d-md-flex  justify-content-around">
         <div class="container-a d-flex">
             <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="./image/insta-svgrepo-com.svg"alt="foto-insta"></a>
             <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1" src="./image/facebook-svgrepo-com.svg" alt="face-foto"></a>

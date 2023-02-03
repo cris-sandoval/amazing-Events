@@ -196,7 +196,7 @@ const data = {
 };
 
 const homeCards = document.querySelector(".card-conteiner");
-data.events.forEach((item) => {
+data.events.forEach(item => {
   homeCards.innerHTML += `
       <div class="card" id="card-cont" style="width: 19rem; height: 28rem; margin:20px;">
       <img src=${item.image} class="card-img" id="imange-card"  alt="food">

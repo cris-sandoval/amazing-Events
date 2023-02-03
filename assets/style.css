@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-    
+}
+#navbar{
+    background-color: rgb(212, 228, 188);
 }
 body{
     width: 100%;
+}
+header{
+
 }
 main{
     width: 100%;
@@ -19,6 +23,7 @@ footer > div > img{
 }
 footer{
     display: flex;
+    background-color: rgb(153, 164, 137);
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -30,19 +35,42 @@ footer>div{
     margin: 10px;
     gap: 5rem;
 }
-h1{
+#h1{
     display: flex;
     margin: 50px;
     height: 9rem;
     justify-content: center;
     align-items: center;
     font-family: 'Anton', sans-serif;
+    color: rgb(185, 74, 81);
     
 }
+/* //cheBox */
+.check{
+    text-shadow: 7px 1px 7px #8a8383 ;
+}
+
+.nav-link{
+    text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+     color: #7b724d;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-in-out;
+}
+
+
 /* cartas in general */
 #card-cont{
-    background-color: rgb(226, 234, 234);
-    border-style:unset 
+    background-color: rgb(212, 228, 188);
+    border-style:unset;
+    box-shadow: 1px 5px 15px 0 rgb(94, 101, 101);
+
 }
 #imange-card{
     width: ;
@@ -81,11 +109,6 @@ h1{
     margin-left: 30px;
     width: 50px;
 }
-.main-upcoming{
-    width: auto;
-    height: auto;
-    min-height: 80vh;
-}
 .search-container{
     width: 1rem;
     height: 2rem;
@@ -98,34 +121,34 @@ h1{
 .form-contact{
     
     background-color: rgb(233, 238, 238);
-    width: 500px;
+    width: 300px;
     min-width: 400px;
     height: 450px;
+    gap: 1rem;
+    margin-bottom: 4rem;
     border-radius: 50px;
     border: 2px solid rgb(230, 221, 221);
 }
-form>div{
-    
-    margin-left: 75px;
-    min-margin-left: 10px;
-    gap: 100px;
-    margin-top: 20px;
 
+#form-floating{
+    width: 22rem;
+    margin: auto;
+}
+#email{
+    width: 17rem;
+    margin: auto;
+
+}
+.last-container{
+    margin: auto;
 }
 .e-mail-input{
-    margin-left: 38px;
+    width: 13.6rem;
 }
-form>div>label>input{
-    
-    width: 280px;
-    margin-left: 9px;
+#date-here{
+    margin: auto;
+    font-size: x-large ;
 }
-.main-contact{
-    width: auto;
-    min-height: 80vh;
-    height: auto;
-}
-
 
 
 /* /////----- STATS------///
@@ -140,24 +163,29 @@ form>div>label>input{
    justify-content: center;
    align-items: center;
  }
-.Title-content{
-    
-}
+
  tbody,th,tr,td {
     border: 2px solid rgb(81, 72, 57);
 }
 .table{
     width: 90%;
+    margin-bottom: 45rem;
 }
-table{
+#Title-content{
+    background-color: #bcbbbb;
+}
+/* table{
 margin: auto;
-}
+} */
 .stats{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+.Title-content{
+    background-color: #8a8383;
 }
 /*  
  #table{
@@ -186,38 +214,22 @@ td{
 
 
 
-@media screen and (max-width:1000px){
-    #table{
-        display: flex;
-        flex-wrap: wrap;
-        width: 290px;
-        height: 400px;
-}
 
-@media screen and (max-width:457px) {
-    form>div>label>input{
+
+@media screen and (max-width:400px) {
+
+    footer>div{
+        margin: 10px;
+        gap: 2rem;
+}
+@media screen and (max-width: 407px){
+    .form-contact{
     
-        width: 260px;
-        margin-left: 9px;
-    }
-}
-@media screen and (max-width:430px){
-
-    form{
-    display: flex;
-    flex-direction: row;
-        background-color: rgb(224, 231, 231);
-        width: 500px;
-        min-width: 380px;
-        height: 400px;
+        background-color: rgb(233, 238, 238);
+        width: 300px;
+        height: 450px;
+        margin-bottom: 4rem;
         border-radius: 50px;
         border: 2px solid rgb(230, 221, 221);
     }
-    form>div>label>input{
-    
-        width: 190px;
-        margin-left: 9px;
-    }
-}   
-
-
+}
