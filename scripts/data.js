@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   currentDate: "2022-01-01",
   events: [
     {
@@ -194,21 +194,3 @@ const data = {
     },
   ],
 };
-
-const homeCards = document.querySelector(".card-conteiner");
-data.events.forEach(item => {
-  homeCards.innerHTML += `
-      <div class="card" id="card-cont" style="width: 19rem; height: 28rem; margin:20px;">
-      <img src=${item.image} class="card-img" id="imange-card"  alt="food">
-          <div class="card-body">
-              <h5 class="card-title"> <b> ${item.name} </b></h5>
-              <p class="card-text">${item.date} </p>
-              <p class="card-text" id="card-text">${item.description}</p>
-              <div class="container-price"> 
-              <p class="div-price"> <b> Price:</b> $${item.price}</p>
-              <a href="#" class="btn btn-primary" id="btn-details">Details</a>
-              </div>
-              </div>
-      </div>
-      `;
-});

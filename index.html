@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing Events</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="shortcut icon" href="./assets/image/Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./resources/icons/Favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
     <header class=>
         <nav class="navbar navbar-expand-lg bg-body-terti" id="navbar">
             <div class="container-fluid d-flex ">
-                <img src="./assets/image/Logo Amazing Events.png"
+                <img src="./resources/icons/Logo Amazing Events.png"
                     class="d-inline-block align-text-top p-1 object-fit-contain" width="130" height="74" alt="logo-all">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,18 +33,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="./assets/upcoming.html"><b> Upcoming Events
+                            <a class="nav-link text-danger-emphasis" href="./pages/upcoming.html"><b> Upcoming Events
                                 </b> </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="./assets/pastevents.html"><b> Past Events
+                            <a class="nav-link text-danger-emphasis" href="./pages/pastevents.html"><b> Past Events
                                 </b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="./assets/contact.html"> <b> Contact </b></a>
+                            <a class="nav-link text-danger-emphasis" href="./pages/contact.html"> <b> Contact </b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="./assets/stats.html"> <b> Stats </b></a>
+                            <a class="nav-link text-danger-emphasis" href="./pages/stats.html"> <b> Stats </b></a>
                         </li>
                     </ul>
                 </div>
@@ -55,36 +55,15 @@
         <section class="">
             <h1 id="h1">Amazing Events</h1>
         </section>
-        <section class="check d-flex flex-wrap align-items-center justify-content-center">
+        <section id="checkContainer" class="checkFilter">
 
-            <div class="form-check form-check-inline d-flex flex-lg-wrap">
-                <input class="form_check" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1"> Food Festival </label>
+            <div class="divCheck form-check-inline d-flex flex-lg-wrap">
+                
             </div>
 
-            <div class="form-check form-check-inline d-flex flex-lg-wrap">
-                <input class="form_check" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Music Concert</label>
-            </div>
-
-            <div class="form-check form-check-inline d-flex flex-lg-wrap">
-                <input class="form_check" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3"> Race </label>
-            </div>
-
-            <div class="form-check form-check-inline d-flex flex-lg-wrap">
-                <input class="form_check" type="checkbox" id="inlineCheckbox4" value="option4">
-                <label class="form-check-label" for="inlineCheckbox4"> Book Exchange </label>
-            </div>
-
-            <div class="form-check form-check-inline d-flex flex-lg-wrap">
-                <input class="form_check" type="checkbox" id="inlineCheckbox5" value="option5">
-                <label class="form-check-label" for="inlineCheckbox5">Let's go to the cinema </label>
-            </div>
-            <div class="search d-flex flex-wrap align-items-center justify-content-center" id="search">
+            <div class="search" id="search">
                 <form class="d-flex tam_input" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" id="searchBox" placeholder="Search" aria-label="search">
                 </form>
             </div>
 
@@ -95,17 +74,18 @@
     </main>
     <footer class="  d-md-flex  justify-content-around">
         <div class="container-a d-flex">
-            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="./assets/image/insta-svgrepo-com.svg"alt="foto-insta"></a>
-            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1" src="./assets/image/facebook-svgrepo-com.svg" alt="face-foto"></a>
-            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1" src="./assets/image/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="./resources/icons/insta-svgrepo-com.svg"alt="foto-insta"></a>
+            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1" src="./resources/icons/facebook-svgrepo-com.svg" alt="face-foto"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1" src="./resources/icons/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
         </div>
         <h5><b>Cohort 42| Cristian Sandoval</b></h5>
     </footer>
-    <script src="./assets/data.js"></script>
-    <!-- <script src="./assets/main.js"></script> -->
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    
+    <script type="module" src="./scripts/home.js"></script>
+</body>
+
 
 </html>

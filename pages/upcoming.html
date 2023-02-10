@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tails </title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./image/Favicon.png" type="image/x-icon">
+    <title> Upcoming Events</title>
+    <link rel="shortcut icon" href="./resources/icons/Favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+       
+        <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
-    <header class=>
+    <header>
         <nav class="navbar navbar-expand-sm bg-body-terti" id="navbar">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand" href="#">
-                    <img src="./image/Logo Amazing Events.png" class="d-inline-block align-text-top p-1 object-fit-contain" width="130"
-                        height="74" alt="logo-all">
+                    <img src="../resources/icons/Logo Amazing Events.png"
+                        class="d-inline-block align-text-top p-1 object-fit-contain" width="130" height="74"
+                        alt="logo-all">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +35,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-danger-emphasis" href="./upcoming.html"><b> Upcoming Events </b> </a>
+                            <a class="nav-link text-danger-emphasis" href="#"><b> Upcoming Events </b> </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-danger-emphasis" href="./pastevents.html"><b> Past Events </b></a>
@@ -50,40 +51,43 @@
             </div>
         </nav>
     </header>
-    <main class="main-tails d-flex justify-content-center align-items-center">
-        <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
-            <img src="./image/Cine7.jpg" class="card-img-top" alt="foto-cine">
-            <div class="card-body">
-              <h5 class="card-title">Avengers</h5>
-              <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"> <b> Date:</b> 2022-10-15</li>
-              <li class="list-group-item"><b> Category:</b>Let's go to the cinema</li>
-              <li class="list-group-item"><b> Place:</b> Room D1</li>
-              <li class="list-group-item"><b> Capacity:</b>  9000</li>
-              <li class="list-group-item"><b> Price:</b>  $250</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-    </main>
+    <main class="">
+        <div>
+            <h1 id="h1">Upcoming Events</h1>
+        </div>
+        <section id="checkContainer" class="checkFilter">
 
-    <footer class=" j d-md-flex  justify-content-around">
+            <div class="divCheck form-check-inline d-flex flex-lg-wrap">
+                
+            </div>
+
+            <div class="search" id="search">
+                <form class="d-flex tam_input" role="search">
+                    <input class="form-control me-2" type="search" id="searchBox" placeholder="Search" aria-label="search">
+                </form>
+            </div>
+
+        </section>
+        <section id="main-index" class="card-conteiner row d-flex flex-wrap justify-content-center align-items-center">
+
+        </section>
+    </main>
+    <footer class="j d-md-flex  justify-content-around">
         <div class="container-a d-flex">
-            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="./image/insta-svgrepo-com.svg"alt="foto-insta"></a>
-            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1" src="./image/facebook-svgrepo-com.svg" alt="face-foto"></a>
-            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1" src="./image/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="../resources/icons/insta-svgrepo-com.svg"alt="foto-insta"></a>
+            <a href="https://es-la.facebook.com" target="_blank"><img class="fotter-img p-1" src="../resources/icons/facebook-svgrepo-com.svg" alt="face-foto"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img class="fotter-img p-1" src="../resources/icons/whatsapp-svgrepo-com.svg" alt="wts-foto"></a>
         </div>
         <h5><b>Cohort 42| Cristian Sandoval</b></h5>
     </footer>
 
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+       
+        <script type="module" src="../scripts/upcomi.js"></script>
 </body>
 
 </html>
