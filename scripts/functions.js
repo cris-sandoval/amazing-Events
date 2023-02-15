@@ -68,3 +68,61 @@ export function filteredBySearch (data, userSearch){
 
 export const url = "https://mindhub-xj03.onrender.com/api/amazing"
   
+export   function eventStatitics(element1, element2, element3, where) {
+  where.innerHTML += `
+  <tr>
+    <td>${element1.name}  ${element1.assistance.toFixed(2)}%</td>
+    <td>${element2.name}  ${element2.assistance.toFixed(2)}%</td>
+    <td>${element3.name}  ${element3.capacity}</td>
+  </tr>
+  `
+}
+
+export function statsFilter(array, where) {
+  let categories = {}
+  
+  for (let item of array) {
+    if (categories[item.category]) {
+      categories[item.category].push(item)
+      
+    } else {
+      categories[item.category] = [item]
+      // console.log(categories);
+    }
+  }
+  where.innerHTML += `
+  <tbody>
+      <tr>
+          <td>Categories</td>
+          <td>Revenues</td>
+          <td>Porcentage of attendance</td>
+      </tr>
+  </tbody>
+  `
+
+  for (let item of Object.values(categories)) {
+  console.log(Object.values(categories));
+
+      let name
+      let revenues = 0
+      let assistance = 0
+
+
+      for (let event of item) {
+          name = event.category
+          revenues += (event.estimate ? event.estimate : event.assistance) * event.price
+         
+          assistance += ((event.estimate ? event.estimate : event.assistance) * 100) / event.capacity
+      }
+      assistance = (assistance / item.length).toFixed(2)
+      where.innerHTML += `
+      <tbody>
+        <tr>
+          <td>${name}</td>
+          <td> $ ${revenues}</td>
+          <td>${assistance} % </td>
+        </tr>
+      </tbody>
+      `
+  }
+}

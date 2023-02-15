@@ -58,87 +58,43 @@
             <h1 id="h1"> Stats </h1>
         </div>
         <div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th colspan="3" id="Title-content">Events Statistics</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Events with the highest percentage of attendance</td>
-                  <td>Events with the lowest percentage of attendance</td>
-                  <td>Event with larger capacity</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th colspan="3" id="Title-content">Upcoming events statistics by category</th>
-                </tr>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Porcentage of attendance</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th colspan="3" id="Title-content">Past events statistics by category</th>
-                </tr>
-                <tr>
-                  <td>Categories</td>
-                  <td>Revenues</td>
-                  <td>Porcentage of attendance</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="3">Events Statistics</th>
+              </tr>
+            </thead>
+            <tbody id="tableEvents">
+              <tr>
+                <td>Events with the highest percentage of attendance</td>
+                <td>Events with the lowest percentage of attendance</td>
+                <td>Event with larger capacity</td>
+              </tr>
+            </tbody>
+    
+            <thead>
+              <tr>
+                <th colspan="3">Upcoming events statistics by category</th>
+              </tr>
+            </thead>
+            <tbody id="upcomingtable">
+    
+            </tbody>
+    
+            <thead>
+              <tr>
+                <th colspan="3">Past events statistics by category</th>
+              </tr>
+            </thead>
+    
+            <tbody id="pasttable">
+    
+            </tbody>
+          </table>
           </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-        <script type="module" src="../scripts/stats.js"></script>
+   
+
     <footer class="d-sm-flex flex-wrap justify-content-around">
         <div class="container-a d-flex">
             <a href="https://www.instagram.com" target="_blank"><img class="fotter-img p-1" src="../resources/icons/insta-svgrepo-com.svg"alt="foto-insta"></a>
@@ -149,7 +105,10 @@
     </footer>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script type="module" src="../scripts/stats.js"></script>
 </body>
 
 </html>
