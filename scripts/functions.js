@@ -12,11 +12,13 @@ export function createChekBox(list, container){
   // console.log(createChekBox(categoryCheBox))
   
 export function printCards(container, data){
-    container.innerHTML = ""
+    if(data.length === 0 ){
+      return container.innerHTML=`<h2 class="h2-R"> << -- NO RESULTS -- >> </h2> ` 
+    }
     data.forEach(i => {
     container.innerHTML += `
-          <div class="card" id="card-cont" style="width: 19rem; height: 28rem; margin:20px;">
-        <img src=${i.image} class="card-img" id="imange-card"  alt="food">
+        <div class="card" id="card-cont" style="width: 19rem; height: 30rem; margin:20px;">
+              <img src=${i.image} class="card-img" id="imange-card"  alt="food">
             <div class="card-body">
                 <h5 class="card-title"> <b> ${i.name} </b></h5>
                 <p class="card-text">${i.date} </p>
@@ -24,13 +26,36 @@ export function printCards(container, data){
                 <div class="container-price"> 
                 <p class="div-price"> <b> Price:</b> $${i.price}</p>
                 <a href="./tails.html?cardDetails=${i._id}" class="btn btn-primary" id="btn-details">Details</a>
-                </div>
-                </div>
+            </div>
         </div>
         `
       })
   }
 
+  export function getCategories(cheked){
+      const categories = []
+      for(let category of cheked){
+        if(category){
+          categories.push(category.value)
+        }
+      } return categories
+  } 
+  
+  export function filterCheck(list, categories){
+      if (categories.length === 0){
+        return list
+      }  
+      let filtered = []
+      categories.forEach(category => {
+        list.forEach(event =>{
+          if(category === event.category){
+            filtered.push(event)
+          }
+        })
+      })
+      return filtered
+    }
+    
 export function filteredBySearch (data, userSearch){
     const contenedor = []
     data.filter(e => {
@@ -38,51 +63,8 @@ export function filteredBySearch (data, userSearch){
         contenedor.push(e)
       }
     })
-    return contenedor 
+    return contenedor  
   }
-  
-export function filterCheck(list, categories){
-    if (categories.length === 0){
-      return list
-    }  
-    let filtered = []
-    categories.forEach(category => {
-      list.forEach(event =>{
-        if(category === event.category){
-          filtered.push(event)
-        }
-      })
-    })
-    return filtered
-  }
-export function getCategories(cheked){
-    const categories = []
-    for(let category of cheked){
-      if(category){
-        categories.push(category.value)
-      }
-    } return categories
-  } 
 
-  export function printCardsTails(container, data){
-    container.innerHTML = ""
-    data.forEach(i => {
-    container.innerHTML += `
-          <div class="card" id="card-cont" style="width: 19rem; height: 28rem; margin:20px;">
-        <img src=${i.image} class="card-img" id="imange-card"  alt="food">
-            <div class="card-body">
-                <h5 class="card-title"> <b> ${i.name} </b></h5>
-                <p class="card-text">${i.date} </p>
-                <p class="card-text" id="card-text">${i.description}</p>
-                <div class="container-price"> 
-                <p class="div-price"> <b> Category:</b> ${i.category}</p>
-                <p class="div-price"> <b> Place:</b> ${i.place}</p>
-                <p class="div-price"> <b> Asistence:</b> ${i.asistance}</p>
-                <p class="div-price"> <b> Price:</b> $${i.price}</p>
-                </div>
-                </div>
-        </div>
-        `
-      })
-  }
+export const url = "https://mindhub-xj03.onrender.com/api/amazing"
   

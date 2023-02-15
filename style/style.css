@@ -6,6 +6,37 @@
 #navbar{
     background-color: rgb(212, 228, 188);
 }
+
+/* carta detail */
+.h2-R{
+    display: flex;
+    color: rgb(207, 98, 136);
+    align-items: center;
+    justify-content: center;
+}
+#card-cont{
+    display: flex;
+    width: 39rem;
+    height: 22rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#imange-container{
+    width: 25rem;
+    margin: 10px;
+}
+
+#card-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+7777777777777777
+
 body{
     width: 100%;
 }
